@@ -2,10 +2,12 @@
 
 nano ~/.ssh/authorized_keys
 nano /etc/ssh/sshd_config
+reboot
 
 >   /// caddy ///
 
 nano /etc/caddy/Caddyfile
+sudo systemctl reload caddy
 
 >   /// pm2 ///
 
@@ -26,7 +28,7 @@ sudo -v // auth for 5 min
 
 apt update && apt upgrade
 
-apt install unattended-upgrades && dpkg-reconfigure --priority=low unattended-upgrades
+// apt install unattended-upgrades && dpkg-reconfigure --priority=low unattended-upgrades
 
 adduser user && usermod -aG sudo user
 
