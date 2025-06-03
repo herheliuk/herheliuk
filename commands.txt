@@ -28,6 +28,8 @@ sudo -v // auth for 5 min
 
 apt update && apt upgrade
 
+sudo timedatectl set-timezone Europe/London
+
 // apt install unattended-upgrades && dpkg-reconfigure --priority=low unattended-upgrades
 
 adduser user && usermod -aG sudo user
