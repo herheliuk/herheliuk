@@ -5,7 +5,8 @@
 ### 🔧 Backend
 - **Caddy** *(goodbye, nginx 👋)*  
 - **Bun** *(so long Node.js)*  
-- **Hono** *(pushing the limits)*  
+- **Hono** *(pushing the limits)*
+- **Flask + SeaSurf** *(keep it simple)*  
 - **PM2** *(keeping those hot APIs running)*
 
 ### 🎨 Frontend
