@@ -6,7 +6,7 @@
 - **Caddy** *(goodbye, nginx 👋)*  
 - **Bun** *(so long Node.js)*  
 - **Flask + SeaSurf** *(keep it simple)*
-- **Hono** *(pushing the limits)*
+- **Hono** *(burning down the limits)*
 
 ### 🎨 Frontend
 - **EJS** *(classic, thoroughly sanitised)*  
