@@ -7,6 +7,7 @@
 - **Bun** *(so long Node.js)*  
 - **Flask + SeaSurf** *(keep it simple)*
 - **Hono** *(burning down the limits)*
+- **SQLite** *(error, db is locked)*
 
 ### 🎨 Frontend
 - **EJS** *(classic, thoroughly sanitised)*  
@@ -15,6 +16,7 @@
 ### 🧠 Languages
 - **Python** 🐍 (Because I write code that even humans can read)
 - **TypeScript** 🔷 (Proving Oracle wrong, one line at a time)
+- **SQL** 🗂️ (Because of course I am)
 
 ---
 
