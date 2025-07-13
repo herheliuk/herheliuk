@@ -37,5 +37,6 @@
 ---
 
 nano /etc/zshrc
+
 alias npm='bun'
 alias npx='bunx'
