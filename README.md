@@ -33,3 +33,9 @@
 - [Namecheap](https://namecheap.com) *(my domain guardian of choice)*  
 - [Linode](https://linode.com) *(bare metal, great prices)*  
 - [Vercel](https://vercel.com) *(for simple deploys)*
+
+---
+
+nano /etc/zshrc
+alias npm='bun'
+alias npx='bunx'
