@@ -24,6 +24,18 @@ sudo -i // drop into root
 
 sudo -v // auth for 5 min
 
+>   /// bash ///
+
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+>   /// python ///
+
+#!/usr/bin/env python3
+
+if __name__ == "__main__":
+
 >   /// Server Setup ///
 
 apt update && apt upgrade
