@@ -5,7 +5,7 @@
 - **Caddy** *(goodbye, nginx 👋)*
 - **Bun** *(so long Node.js)*
 - **Flask + SeaSurf** *(keep it simple)*
-- **SQLite** *(too many connections)*
+- **SQLite** *(database is locked)*
 - **Hono + EJS** *(if you don't do python)*
 - **Vite + TailwindCSS** *(React, simplified)*
 
