@@ -1,0 +1,63 @@
+> ssh
+
+ssh-copy-id <user@address>
+
+> caddy
+
+nano /etc/caddy/Caddyfile
+sudo systemctl reload caddy
+
+> linux
+
+sudo -i # switch to root
+
+sudo -v # sudo no-password for 5 min
+
+> shebang
+
+#!/usr/bin/env <interpreter>
+
+> bash
+
+cd "$(dirname "$0")"
+
+> python
+
+if __name__ == "__main__":
+
+> VPS
+
+apt update && apt upgrade
+
+timedatectl set-timezone Europe/London
+
+adduser user && usermod -aG sudo user
+
+nano ~/.ssh/authorized_keys
+nano /etc/ssh/sshd_config
+    -> Port <SSH>
+    -> PermitRootLogin no
+    -> PasswordAuthentication no
+reboot
+
+> ufw
+
+sudo ss -tupln
+
+sudo ufw allow <SSH>/tcp
+sudo ufw allow http && sudo ufw allow https
+sudo ufw allow in on lo # caddy dns
+
+sudo ufw enable
+
+sudo ufw status numbered
+sudo ufw delete <number>
+
+> pm2 *broken*
+
+APP_NAME="api.app"
+bunx pm2 start api.ts --interpreter bun --name "$APP_NAME" --output output.log --error error.log
+
+bunx pm2 resurrect # load it back
+
+cd ~ && bunx pm2 save && bunx pm2 startup
