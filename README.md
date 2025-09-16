@@ -31,8 +31,13 @@
 - `alias unenv='deactivate'`
 
 git
-
 - `git config --global alias.head '!sh -c "git reset --hard HEAD"'`
 - `git config --global alias.pushh '!f() { git add . && git commit -m "${1:-pushed}" || true && git push; }; f'`
 - `git config --global alias.pushf '!f() { git add . && git commit -m "${1:-forced}" || true && git push -f; }; f'`
 - `git config --global alias.wipe '!f() { set -e && git checkout --orphan git-wipe && git add -A && git commit -m "${1:-wiped}" && git branch -D main && git branch -m main && git push -f origin main; }; f'`
+
+macOS
+- `defaults write com.apple.dock autohide-time-modifier -float .5`
+- `defaults write com.apple.dock autohide-delay -float 0`
+- `killall Dock`
+- `defaults write com.apple.WindowManager AutoHideDelay -float 0`
