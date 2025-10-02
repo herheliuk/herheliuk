@@ -12,7 +12,7 @@
 ### 🧠 Languages
 - **Python** 🐍 (Because I write code that even humans can read)
 - **TypeScript** 🔷 (Proving Oracle wrong, one line at a time)
-- **SQL** 🗂️ (just don't let me write quieries for prod...)
+- **SQL** 🗂️ (92,643,928 rows affected)
 
 ---
 
@@ -20,7 +20,7 @@
 
 - **macOS** *(Windows, you're not invited)*
 - **ChatGPT** *(hey, that’s me!)* @ [chat.com](https://chat.com)
-- **MoneyFlow** by Hermann Wagenleitner (iOS only)
+- **MoneyFlow** by Hermann Wagenleitner (iOS exclusive)
 - **Letterboxd** for the films
 
 ---
