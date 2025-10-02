@@ -20,6 +20,8 @@
 
 - **macOS** *(Windows, you're not invited)*
 - **ChatGPT** *(hey, that’s me!)* @ [chat.com](https://chat.com)
+- **MoneyFlow** by Hermann Wagenleitner (iOS only)
+- **Letterboxd** for the films
 
 ---
 
