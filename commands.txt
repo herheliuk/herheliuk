@@ -1,0 +1,88 @@
+> ssh
+
+ssh-keygen -t ecdsa -b 521
+ssh-copy-id <username@address>
+
+sudo nano ~/.ssh/authorized_keys
+
+sudo -i
+
+nano /etc/ssh/sshd_config
+
+fail2ban-client status sshd
+
+> caddy (sudo)
+
+nano /etc/caddy/Caddyfile
+systemctl reload caddy
+
+> linux
+
+sudo -i # switch to root
+
+sudo -v # sudo no-password for 5 min
+
+> shebang
+
+#!/usr/bin/env <interpreter>
+
+> bash
+
+cd "$(dirname "$0")"
+
+> python
+
+if __name__ == "__main__":
+
+> VPS (root)
+
+apt update && apt upgrade
+
+hostnamectl set-hostname <machine_name>
+
+timedatectl set-timezone Europe/London
+
+adduser <username>
+usermod -aG sudo <username>
+
+nano /home/<username>/.ssh/authorized_keys
+
+nano /etc/ssh/sshd_config
+    -> Port <SSH>
+    -> PermitRootLogin no
+    -> PasswordAuthentication no
+
+userdel -r <old_user>
+
+reboot
+
+> ufw (sudo)
+
+ss -tupln
+
+ufw allow <SSH>/tcp
+ufw allow http && sudo ufw allow https
+ufw allow in on lo
+
+ufw enable
+
+ufw status numbered
+ufw delete <number>
+
+> fail2ban (sudo)
+
+apt install fail2ban
+nano /etc/fail2ban/jail.d/defaults-debian.conf
+    -> [sshd]
+    -> port = <SSH>
+    -> maxretry = 3
+    -> findtime = 7d
+    -> bantime = -1
+systemctl reload fail2ban
+
+fail2ban-client status sshd
+
+fail2ban-client set sshd unbanip <address>
+nano /etc/fail2ban/jail.d/defaults-debian.conf
+    -> [sshd]
+    -> ignoreip = 127.0.0.1/8 <address>
