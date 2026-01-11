@@ -1,0 +1,7 @@
+nano ~/.zshrc or nano ~/.bashrc
+
+alias npm='bun'
+alias npx='bunx'
+alias python='python3'
+alias sudo-python='sudo -E $(which python)'
+alias unenv='deactivate'
