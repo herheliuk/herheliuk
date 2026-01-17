@@ -22,6 +22,10 @@ sudo -i # switch to root
 
 sudo -v # sudo no-password for 5 min
 
+> make (sudo)
+
+make -C <project_folder> install -j$(nproc) || return 1
+
 > shebang
 
 #!/usr/bin/env <interpreter>
