@@ -1,0 +1,11 @@
+nano ~/.zshrc or nano ~/.bashrc
+
+alias npm='bun'
+alias npx='bunx'
+alias python='python3'
+alias unenv='deactivate'
+
+alias s_python='sudo -E $(which python)'
+
+alias d_exec='docker exec -it'
+alias d_run='docker run --rm'
