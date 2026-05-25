@@ -1,0 +1,8 @@
+# git config --get-regexp ^alias\.
+alias.pushh !f() { git add . && git commit -m "${1:-pushed}" || true && git push; }; f
+alias.fpush !sh -c "git add . && git commit -m 'up' || true && git push -f"
+alias.head !sh -c "git reset --hard HEAD"
+alias.pushf !f() { git add . && git commit -m "${1:-forced}" || true && git push -f; }; f
+alias.upmain !sh -c "git push --set-upstream origin main"
+alias.setup !sh -c "git branch --set-upstream-to origin main"
+alias.wipe !f() { set -e && git checkout --orphan git-wipe && git add -A && git commit -m "${1:-wiped}" && git branch -D main && git branch -m main && git push -f origin main; }; f

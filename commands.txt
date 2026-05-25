@@ -1,0 +1,66 @@
+> ssh
+
+ssh-keygen -t ecdsa -b 521
+ssh-copy-id <username@address>
+
+sudo nano ~/.ssh/authorized_keys
+
+sudo -i
+
+nano /etc/ssh/sshd_config
+
+fail2ban-client status sshd
+
+> git
+
+git rebase -i --root
+# f (fixup), r (rename)
+
+> curl
+
+curl -sfLO LINK
+
+> caddy (sudo)
+
+nano /etc/caddy/Caddyfile
+systemctl reload caddy
+
+> linux
+
+sudo -i # switch to root
+
+sudo -v # sudo no-password for 5 min
+
+> make (sudo)
+
+make -C <project_folder> install -j$(nproc) || return 1
+
+> shebang
+
+#!/usr/bin/env <interpreter>
+
+> bash
+
+cd "$(dirname "$0")"
+
+> python
+
+if __name__ == "__main__":
+
+> fail2ban (sudo)
+
+apt install fail2ban
+nano /etc/fail2ban/jail.d/defaults-debian.conf
+    -> [sshd]
+    -> port = <SSH>
+    -> maxretry = 3
+    -> findtime = 7d
+    -> bantime = -1
+systemctl reload fail2ban
+
+fail2ban-client status sshd
+
+fail2ban-client set sshd unbanip <address>
+nano /etc/fail2ban/jail.d/defaults-debian.conf
+    -> [sshd]
+    -> ignoreip = 127.0.0.1/8 <address>
